@@ -1,0 +1,48 @@
+<div class="background">
+<div class="bg-img" *ngIf="cartList">
+
+
+
+  <div class="diary" *ngIf="cartList.Meat !== undefined && cartList.Meat.length > 0">
+    <label>{{cartList.Meat.length}}</label>
+    <img src="assets/location-Icon.png" class="img-fluid" alt="Responsive image"> 
+  </div>
+
+  <div class="drinks" *ngIf="cartList.Drinks !== undefined && cartList.Drinks.length > 0">
+    <label>{{cartList.Drinks.length}}</label>
+    <img src="assets/location-Icon.png" class="img-fluid" alt="Responsive image"> 
+  </div>
+
+  <div class="backery" *ngIf="cartList.Batery !== undefined && cartList.Batery.length > 0">
+    <label>{{cartList.Batery.length}}</label>
+    <img src="assets/location-Icon.png" class="img-fluid" alt="Responsive image"> 
+  </div>
+
+
+  <div class="chocolate" *ngIf="cartList.Chocolate !== undefined && cartList.Chocolate.length > 0">
+    <label>{{cartList.Chocolate.length}}</label>
+    <img src="assets/location-Icon.png" class="img-fluid" alt="Responsive image"> 
+  </div>
+
+  <div class="toys" *ngIf="cartList.Toys !== undefined && cartList.Toys.length > 0">
+    <label>{{cartList.Toys.length}}</label>
+    <img src="assets/location-Icon.png" class="img-fluid" alt="Responsive image"> 
+  </div>
+
+  <div class="International_Foods" *ngIf="cartList.InternationalFoods !== undefined && cartList.InternationalFoods.length > 0">
+    <label>{{cartList["InternationalFoods"].length}}</label>
+    <img src="assets/location-Icon.png" class="img-fluid" alt="Responsive image"> 
+  </div>
+
+  <div class="electronics" *ngIf="cartList.Electronics !== undefined && cartList.Electronics.length > 0">
+    <label>{{cartList.Electronics.length}}</label>
+    <img src="assets/location-Icon.png" class="img-fluid" alt="Responsive image"> 
+  </div>
+
+  <div class="grocery" *ngIf="cartList.Grocery !== undefined && cartList.Grocery.length > 0" >
+    <label>{{cartList.Grocery.length}}</label>
+    <img src="assets/location-Icon.png" class="img-fluid" alt="Responsive image"> 
+  </div> 
+</div>
+</div>
+

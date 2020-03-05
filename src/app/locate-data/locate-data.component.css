@@ -1,0 +1,101 @@
+.bg-img{
+    background-image: url('/assets/supermarket.png');
+    height: 100vh;
+    background-position: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 78% 85%;
+    position: relative;
+}
+
+.background{
+    height: 100%;
+    width: 90%;
+    margin:0 auto;
+}
+
+.meat{
+    position: absolute;
+    left: 18.4%;
+    top: 12%;
+    width: 5%;
+    text-align: center;
+}
+
+.diary{
+    position: absolute;
+    left: 53.4%;
+    top: 12%;
+    width: 5%;
+    text-align: center;
+}
+
+.drinks{
+    position: absolute;
+    right: 26.4%;
+    top: 13%;
+    width: 5%;
+    text-align: center;
+}
+
+.backery{
+    position: absolute;
+    left: 19.4%;
+    top: 52%;
+    width: 3%;
+    text-align: center;
+}
+
+.chocolate{
+    position: absolute;
+    left: 29.4%;
+    top: 33%;
+    width: 3%;
+    text-align: center;
+}
+
+.toys{
+    position: absolute;
+    left: 29.4%;
+    top: 55%;
+    width: 3%;
+    text-align: center;
+}
+
+.International_Foods{
+    position: absolute;
+    right: 38.4%;
+    top: 30%;
+    width: 4%;
+    text-align: center;
+}
+
+.electronics{
+    position: absolute;
+    right: 49.4%;
+    top: 55%;
+    width: 3%;
+    text-align: center;
+}
+
+.grocery{
+    position: absolute;
+    right: 27.4%;
+    top: 50%;
+    width: 4%;
+    text-align: center;
+}
+
+
+
+/* .diary label{
+    position: absolute;
+    left: 90%;
+}
+
+.diary img{
+    position: absolute;
+    top: 17%;
+} */
+

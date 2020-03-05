@@ -1,0 +1,48 @@
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Dashboard</h3>
+      </div>
+    </header>
+  
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Shop Items</h1>
+     
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" (click)="showCat()" type="button" id="dropdownMenuButton"aria-haspopup="true" aria-expanded="false" >
+                      {{selctCat}}
+                    </button>
+                    <div class="dropdown-menu"  [ngStyle]="{'display':showCategories === true ? 'block' : 'none' }" >
+                      <a class="dropdown-item" *ngFor="let cat of categories" (click)="selectCategories(cat)">{{cat}}</a>
+                   
+                    </div>
+                  </div>
+             </div>
+             <div class="col-md-4" >
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" (click)="showItem()" type="button" id="dropdownMenuButton"aria-haspopup="true" aria-expanded="false" >
+                      {{selctItem}}
+                    </button>
+                    <div class="dropdown-menu"  [ngStyle]="{'display':showItems === true ? 'block' : 'none' }" >
+                      <a class="dropdown-item" *ngFor="let item of items" (click)="selectItems(item)">{{item.Name}}</a>
+                   
+                    </div>
+                  </div>
+             </div>
+             <div class="col-md-4" *ngIf="addbutton === true">
+                <button class="btn btn-md btn-primary btn-block text-uppercase" type="button" (click)="add()">Add</button>
+             </div>
+         </div>
+     </div>
+    </main>
+  
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Cover template for <a href="#">IMCS</a>, by <a href="#">@imcs</a>.</p>
+      </div>
+    </footer>
+  </div>
